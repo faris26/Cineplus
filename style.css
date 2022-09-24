@@ -1,0 +1,146 @@
+/* CSS font import */
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
+
+*{
+   box-sizing: border-box; 
+}
+
+/* Search box */
+
+.search{
+    position:relative;
+    height:50px;
+}
+.search .input{
+    background-color: white;
+    border:0;
+    font-size:18px;
+    padding:15px;
+    height:50px;
+    width:50px;
+    transition:width 0.3s ease;
+}
+
+.btn{
+    background-color:red;
+    border:0;
+    cursor:pointer;
+    font-size:24px;
+    position:absolute;
+    top:0;
+    left:0;
+    height:50px;
+    width:50px;
+    transition:transform 0.3s ease;
+}
+
+.btn:focus, input:focus{
+    outline:none;
+}
+
+.search.active .input{
+  width:200px;
+}
+.search.active .btn{
+    transform:translateX(198px);
+}
+
+/* Menu nav bar  */
+
+a{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+body {
+	
+	font-size:22px;
+	line-height: 32px;
+	color: #000000;
+	word-wrap:break-word !important;
+	font-family: 'Space Grotesk', sans-serif;
+	overflow-x: hidden; 
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin:0;
+	}
+
+#container {
+	margin: 0 auto;
+}
+
+nav {
+	margin: 0px ;
+	font-family: 'Space Grotesk', sans-serif;
+}
+
+
+nav ul {
+	padding: 0;
+  margin: 0;
+	list-style: none;
+	position: relative;
+	}
+	
+nav ul li {
+	display:inline-block;
+	
+	}
+
+nav a {
+	display:block;
+	padding:0 10px;	
+	color:black;
+	font-size:20px;
+	line-height: 60px;
+	text-decoration:none;
+}
+
+nav a:hover { 
+	font-weight: bold; 
+
+}
+
+// cookie boxe
+
+	.cookie-alert {
+   position: fixed;
+   bottom: 20px;
+   right:20px;
+   border-radius: 10px;
+   background:#2f2f2f;
+   color:#fff;
+   padding:10px 15px;
+   width:280px;
+   z-index:100;
+}
+.cookie-alert a { 
+   display:block;
+   text-align: center;
+   padding:5px 10px;
+   margin:8px auto 0 auto;
+   border-radius: 10px;
+   background:transparent;
+   border: 2px solid #46A2D9;
+   color:#46A2D9;
+   transition: all .3s ease;
+}
+   .cookie-alert a:hover {
+      background: #46A2D9;
+      color:#2f2f2f;
+   }
+@media only screen and (max-width:480px) {
+   .cookie-alert {
+      text-align: center;
+      left: 0; right: 0;;
+        margin: 0 auto;
+      max-width:700px;
+      padding:10px 30px;
+   }
+}
+
